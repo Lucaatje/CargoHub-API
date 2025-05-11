@@ -1,0 +1,15 @@
+2025-01-07 10:08:58 | Action: GET | Description: 200 OK: Fetching client | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:09:19 | Action: GET | Description: 200 OK: Fetching client | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:09:31 | Action: GET | Description: 200 OK: Fetching orders for client with id 1 | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:45 | Action: GET | Description: 200 OK: Fetching multiple clients | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:45 | Action: DELETE | Description: 200 OK: Deleted client succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:45 | Action: DELETE | Description: 200 OK: Deleted client succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:45 | Action: POST | Description: 200 OK: Client created succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:46 | Action: POST | Description: 200 OK: Client created succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:46 | Action: GET | Description: 200 OK: Fetching client | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:46 | Action: GET | Description: 200 OK: Fetching multiple clients | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:46 | Action: GET | Description: 200 OK: Fetching orders for client with id 1 | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:47 | Action: PUT | Description: 200 OK: Updated client succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:47 | Action: DELETE | Description: 200 OK: Deleted client succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-07 10:42:47 | Action: DELETE | Description: 200 OK: Deleted client succesfully | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+2025-01-14 12:20:53 | Action: GET | Description: 200 OK: Fetching order | ApiKey: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b

@@ -1,0 +1,868 @@
+############clients
+GET http://localhost:5072/cargohub/clients/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+####
+GET http://localhost:5072/cargohub/clients/1/orders
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+####
+POST http://localhost:5072/cargohub/clients
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Raymond Inc",
+    "address": "1296 Daniel Road Apt. 349",
+    "city": "Pierceview",
+    "zip_code": "28301",
+    "province": "Colorado",
+    "country": "United States",
+    "contact_name": "Bryan Clark",
+    "contact_phone": "242.732.3483x2573",
+    "contact_email": "robertcharles@example.net"
+}
+
+####
+PUT http://localhost:5072/cargohub/clients/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Raymond Inc",
+    "address": "1296 Daniel Road Apt. 349",
+    "city": "Pierceview",
+    "zip_code": "28301",
+    "province": "Florida",
+    "country": "United States",
+    "contact_name": "Bryan Clark",
+    "contact_phone": "242.732.3483x2573",
+    "contact_email": "robertcharles@example.net"
+}
+
+####
+DELETE http://localhost:5072/cargohub/clients/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+############inventories
+
+GET http://localhost:5072/cargohub/inventories/1
+
+####
+POST http://localhost:5072/cargohub/inventories
+Content-Type: application/json
+
+{
+    "id": 1,
+    "item_id": "P000001",
+    "description": "Face-to-face clear-thinking complexity",
+    "item_reference": "sjQ23408K",
+    "locations": [3211, 24700, 14123, 19538, 31071, 24701, 11606, 11817],
+    "total_on_hand": 262,
+    "total_expected": 0,
+    "total_ordered": 80,
+    "total_allocated": 41,
+    "total_available": 141
+}
+
+####
+PUT http://localhost:5072/cargohub/inventories/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "item_id": "P000001",
+    "description": "clear-thinking complexity",
+    "item_reference": "sjQ23408K",
+    "locations": [3211, 24700, 14123, 19538, 31071, 24701, 11606, 11817],
+    "total_on_hand": 262,
+    "total_expected": 0,
+    "total_ordered": 80,
+    "total_allocated": 41,
+    "total_available": 141
+}
+
+####
+DELETE http://localhost:5072/cargohub/inventories/1
+
+############item_groups
+
+GET http://localhost:5072/cargohub/item_groups/1
+
+####
+POST http://localhost:5072/cargohub/item_groups
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Furniture",
+    "description": ""
+}
+
+####
+PUT http://localhost:5072/cargohub/item_groups/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Electronics",
+    "description": ""
+}
+
+####
+DELETE http://localhost:5072/cargohub/item_groups/1
+
+############item_lines
+
+GET http://localhost:5072/cargohub/item_lines/1
+
+####
+POST http://localhost:5072/cargohub/item_lines
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Tech Gadgets",
+    "description": ""
+}
+
+####
+PUT http://localhost:5072/cargohub/item_lines/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Home Appliances",
+    "description": ""
+}
+
+####
+DELETE http://localhost:5072/cargohub/item_lines/1
+
+############item_lines
+
+GET http://localhost:5072/cargohub/item_lines/1
+
+####
+POST http://localhost:5072/cargohub/item_lines
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Tech Gadgets",
+    "description": ""
+}
+
+####
+PUT http://localhost:5072/cargohub/item_lines/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Home Appliances",
+    "description": ""
+}
+
+####
+DELETE http://localhost:5072/cargohub/item_lines/1
+
+############item_types
+
+GET http://localhost:5072/cargohub/item_types/1
+
+####
+POST http://localhost:5072/cargohub/item_types
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Laptop",
+    "description": ""
+}
+
+####
+PUT http://localhost:5072/cargohub/item_types/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Desktop",
+    "description": ""
+}
+
+####
+DELETE http://localhost:5072/cargohub/item_types/1
+
+############items
+
+GET http://localhost:5072/cargohub/items/P000001
+
+####
+POST http://localhost:5072/cargohub/items
+Content-Type: application/json
+
+{
+    "uid": "P000001",
+    "code": "sjQ23408K",
+    "description": "Face-to-face clear-thinking complexity",
+    "short_description": "must",
+    "upc_code": "6523540947122",
+    "model_number": "63-OFFTq0T",
+    "commodity_code": "oTo304",
+    "item_line": 11,
+    "item_group": 73,
+    "item_type": 14,
+    "unit_purchase_quantity": 47,
+    "unit_order_quantity": 13,
+    "pack_order_quantity": 11,
+    "supplier_id": 34,
+    "supplier_code": "SUP423",
+    "supplier_part_number": "E-86805-uTM"
+}
+
+####
+PUT http://localhost:5072/cargohub/items/P000001
+Content-Type: application/json
+
+{
+    "uid": "P000001",
+    "code": "sjQ23408K",
+    "description": "Nothing Complex",
+    "short_description": "must",
+    "upc_code": "6523540947122",
+    "model_number": "63-OFFTq0T",
+    "commodity_code": "oTo304",
+    "item_line": 11,
+    "item_group": 73,
+    "item_type": 14,
+    "unit_purchase_quantity": 47,
+    "unit_order_quantity": 13,
+    "pack_order_quantity": 11,
+    "supplier_id": 34,
+    "supplier_code": "SUP423",
+    "supplier_part_number": "E-86805-uTM"
+}
+
+####
+DELETE http://localhost:5072/cargohub/items/P000001
+
+############locations
+
+GET http://localhost:5072/cargohub/locations/1
+
+####
+POST http://localhost:5072/cargohub/locations
+Content-Type: application/json
+
+{
+    "id": 1,
+    "warehouse_id": 1,
+    "code": "A.1.0",
+    "name": "Row: A, Rack: 1, Shelf: 0"
+}
+
+####
+PUT http://localhost:5072/cargohub/locations/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "warehouse_id": 1,
+    "code": "A.1.0",
+    "name": "Row: B, Rack: 2, Shelf: 5"
+}
+
+####
+DELETE http://localhost:5072/cargohub/locations/1
+
+############orders
+
+GET http://localhost:5072/cargohub/orders/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+####
+POST http://localhost:5072/cargohub/orders
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+{
+        "id": 1,
+        "source_id": 33,
+        "order_date": "2019-04-03T11:33:15Z",
+        "request_date": "2019-04-07T11:33:15Z",
+        "reference": "ORD00001",
+        "reference_extra": "Bedreven arm straffen bureau.",
+        "order_status": "Delivered",
+        "notes": "Voedsel vijf vork heel.",
+        "shipping_notes": "Buurman betalen plaats bewolkt.",
+        "picking_notes": "Ademen fijn volgorde scherp aardappel op leren.",
+        "warehouse_id": 18,
+        "ship_to": null,
+        "bill_to": null,
+        "shipment_id": 1,
+        "total_amount": 9905.13,
+        "total_discount": 150.77,
+        "total_tax": 372.72,
+        "total_surcharge": 77.6,
+        "created_at": "2019-04-03T11:33:15Z",
+        "updated_at": "2019-04-05T07:33:15Z",
+        "items": [
+            {
+                "item_id": "P007435",
+                "amount": 23
+            },
+            {
+                "item_id": "P009557",
+                "amount": 1
+            },
+            {
+                "item_id": "P009553",
+                "amount": 50
+            },
+            {
+                "item_id": "P010015",
+                "amount": 16
+            },
+            {
+                "item_id": "P002084",
+                "amount": 33
+            },
+            {
+                "item_id": "P009663",
+                "amount": 18
+            },
+            {
+                "item_id": "P010125",
+                "amount": 18
+            },
+            {
+                "item_id": "P005768",
+                "amount": 26
+            },
+            {
+                "item_id": "P004051",
+                "amount": 1
+            },
+            {
+                "item_id": "P005026",
+                "amount": 29
+            },
+            {
+                "item_id": "P000726",
+                "amount": 22
+            },
+            {
+                "item_id": "P008107",
+                "amount": 47
+            },
+            {
+                "item_id": "P001598",
+                "amount": 32
+            },
+            {
+                "item_id": "P002855",
+                "amount": 20
+            },
+            {
+                "item_id": "P010404",
+                "amount": 30
+            },
+            {
+                "item_id": "P010446",
+                "amount": 6
+            },
+            {
+                "item_id": "P001517",
+                "amount": 9
+            },
+            {
+                "item_id": "P009265",
+                "amount": 2
+            },
+            {
+                "item_id": "P001108",
+                "amount": 20
+            },
+            {
+                "item_id": "P009110",
+                "amount": 18
+            },
+            {
+                "item_id": "P009686",
+                "amount": 13
+            }
+        ]
+}
+####
+PUT http://localhost:5072/cargohub/orders/1
+Content-Type: application/json
+
+{
+        "id": 1,
+        "source_id": 33,
+        "order_date": "2019-04-03T11:33:15Z",
+        "request_date": "2019-04-07T11:33:15Z",
+        "reference": "ORD00001",
+        "reference_extra": "Bedreven arm straffen bureau.",
+        "order_status": "Delivered",
+        "notes": "Voedsel vijf vork heel.",
+        "shipping_notes": "Buurman betalen plaats bewolkt.",
+        "picking_notes": "Ademen fijn volgorde scherp aardappel op leren.",
+        "warehouse_id": 18,
+        "ship_to": null,
+        "bill_to": null,
+        "shipment_id": 1,
+        "total_amount": 9905.13,
+        "total_discount": 150.77,
+        "total_tax": 372.72,
+        "total_surcharge": 77.6,
+        "created_at": "2019-04-03T11:33:15Z",
+        "updated_at": "2019-04-05T07:33:15Z",
+        "items": [
+            {
+                "item_id": "P007435",
+                "amount": 23
+            },
+            {
+                "item_id": "P009557",
+                "amount": 1
+            },
+            {
+                "item_id": "P009553",
+                "amount": 50
+            },
+            {
+                "item_id": "P010015",
+                "amount": 16
+            },
+            {
+                "item_id": "P002084",
+                "amount": 33
+            },
+            {
+                "item_id": "P009663",
+                "amount": 18
+            },
+            {
+                "item_id": "P010125",
+                "amount": 18
+            },
+            {
+                "item_id": "P005768",
+                "amount": 26
+            },
+            {
+                "item_id": "P004051",
+                "amount": 1
+            },
+            {
+                "item_id": "P005026",
+                "amount": 29
+            },
+            {
+                "item_id": "P000726",
+                "amount": 22
+            },
+            {
+                "item_id": "P008107",
+                "amount": 47
+            },
+            {
+                "item_id": "P001598",
+                "amount": 32
+            },
+            {
+                "item_id": "P002855",
+                "amount": 20
+            },
+            {
+                "item_id": "P010404",
+                "amount": 30
+            },
+            {
+                "item_id": "P010446",
+                "amount": 6
+            },
+            {
+                "item_id": "P001517",
+                "amount": 9
+            },
+            {
+                "item_id": "P009265",
+                "amount": 2
+            },
+            {
+                "item_id": "P001108",
+                "amount": 20
+            },
+            {
+                "item_id": "P009110",
+                "amount": 18
+            },
+            {
+                "item_id": "P009686",
+                "amount": 13
+            }
+        ]
+}
+
+####
+DELETE http://localhost:5072/cargohub/orders/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+############shipments
+
+GET http://localhost:5072/cargohub/shipments/1
+
+####
+GET http://localhost:5072/cargohub/shipments/1/orders
+####
+
+GET http://localhost:5072/cargohub/shipments?page=1
+
+####
+GET http://localhost:5072/cargohub/shipments/1/items
+
+####
+POST http://localhost:5072/cargohub/shipments
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+{
+    "id": 1,
+    "order_id": 1,
+    "source_id": 33,
+    "order_date": "2000-03-09",
+    "request_date": "2000-03-11",
+    "shipment_date": "2000-03-13",
+    "shipment_type": "I",
+    "shipment_status": "Pending",
+    "notes": "Zee vertrouwen klas rots heet lachen oneven begrijpen.",
+    "carrier_code": "DPD",
+    "carrier_description": "Dynamic Parcel Distribution",
+    "service_code": "Fastest",
+    "payment_type": "Manual",
+    "transfer_mode": "Ground",
+    "total_package_count": 31,
+    "total_package_weight": 594.42,
+    "items": [
+        {
+            "item_id": "P007435",
+            "amount": 23
+        },
+        {
+            "item_id": "P009557",
+            "amount": 1
+        }
+    ]
+}
+####
+PUT http://localhost:5072/cargohub/shipments/1/items
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+[
+  {"item_id": "P007435", "amount": 22}, 
+  {"item_id": "P009557", "amount": 1}, 
+  {"item_id": "P009553", "amount": 50}, 
+  {"item_id": "P010015", "amount": 16}, 
+  {"item_id": "P002084", "amount": 33}, 
+  {"item_id": "P009663", "amount": 18}, 
+  {"item_id": "P010125", "amount": 18}, 
+  {"item_id": "P005768", "amount": 26}, 
+  {"item_id": "P004051", "amount": 1}, 
+  {"item_id": "P005026", "amount": 29}, 
+  {"item_id": "P000726", "amount": 22}, 
+  {"item_id": "P008107", "amount": 47}, 
+  {"item_id": "P001598", "amount": 32}, 
+  {"item_id": "P002855", "amount": 20}, 
+  {"item_id": "P010404", "amount": 30}, 
+  {"item_id": "P010446", "amount": 6}, 
+  {"item_id": "P001517", "amount": 9}, 
+  {"item_id": "P009265", "amount": 2}, 
+  {"item_id": "P001108", "amount": 20}, 
+  {"item_id": "P009110", "amount": 18}, 
+  {"item_id": "P009686", "amount": 13}
+]
+####
+PUT http://localhost:5072/cargohub/shipments/1/orders
+Content-Type: application/json
+
+{
+        "id": 1,
+        "source_id": 33,
+        "order_date": "2019-04-03T11:33:15Z",
+        "request_date": "2019-04-07T11:33:15Z",
+        "reference": "ORD00001",
+        "reference_extra": "Bedreven arm straffen bureau.",
+        "order_status": "Delivered",
+        "notes": "Voedsel vijf vork heel.",
+        "shipping_notes": "Buurman betalen plaats bewolkt.",
+        "picking_notes": "Ademen fijn volgorde scherp aardappel op leren.",
+        "warehouse_id": 18,
+        "ship_to": null,
+        "bill_to": null,
+        "shipment_id": 1,
+        "total_amount": 9905.13,
+        "total_discount": 150.77,
+        "total_tax": 372.72,
+        "total_surcharge": 77.6,
+        "created_at": "2019-04-03T11:33:15Z",
+        "updated_at": "2019-04-05T07:33:15Z",
+        "items": [
+            {
+                "item_id": "P007435",
+                "amount": 23
+            },
+            {
+                "item_id": "P009557",
+                "amount": 1
+            },
+            {
+                "item_id": "P009553",
+                "amount": 50
+            },
+            {
+                "item_id": "P010015",
+                "amount": 16
+            },
+            {
+                "item_id": "P002084",
+                "amount": 33
+            },
+            {
+                "item_id": "P009663",
+                "amount": 18
+            },
+            {
+                "item_id": "P010125",
+                "amount": 18
+            },
+            {
+                "item_id": "P005768",
+                "amount": 26
+            },
+            {
+                "item_id": "P004051",
+                "amount": 1
+            },
+            {
+                "item_id": "P005026",
+                "amount": 29
+            },
+            {
+                "item_id": "P000726",
+                "amount": 22
+            },
+            {
+                "item_id": "P008107",
+                "amount": 47
+            },
+            {
+                "item_id": "P001598",
+                "amount": 32
+            },
+            {
+                "item_id": "P002855",
+                "amount": 20
+            },
+            {
+                "item_id": "P010404",
+                "amount": 30
+            },
+            {
+                "item_id": "P010446",
+                "amount": 6
+            },
+            {
+                "item_id": "P001517",
+                "amount": 9
+            },
+            {
+                "item_id": "P009265",
+                "amount": 2
+            },
+            {
+                "item_id": "P001108",
+                "amount": 20
+            },
+            {
+                "item_id": "P009110",
+                "amount": 18
+            },
+            {
+                "item_id": "P009686",
+                "amount": 13
+            }
+        ]
+}
+####
+PUT http://localhost:5072/cargohub/shipments/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "order_id": 1,
+    "source_id": 33,
+    "order_date": "2000-03-09",
+    "request_date": "2000-03-11",
+    "shipment_date": "2000-03-13",
+    "shipment_type": "I",
+    "shipment_status": "Delivered",
+    "notes": "Zee vertrouwen klas rots heet lachen oneven begrijpen.",
+    "carrier_code": "DPD",
+    "carrier_description": "Dynamic Parcel Distribution",
+    "service_code": "Fastest",
+    "payment_type": "Manual",
+    "transfer_mode": "Ground",
+    "total_package_count": 31,
+    "total_package_weight": 594.42,
+    "items": [
+        {
+            "item_id": "P007435",
+            "amount": 23
+        },
+        {
+            "item_id": "P009557",
+            "amount": 1
+        }
+    ]
+}
+
+####
+DELETE http://localhost:5072/cargohub/shipments/1
+
+############suppliers
+
+GET http://localhost:5072/cargohub/suppliers/1
+
+####
+
+POST http://localhost:5072/cargohub/suppliers
+Content-Type: application/json
+
+{
+    "id": 1,
+    "code": "SUP0001",
+    "name": "Lee, Parks and Johnson",
+    "address": "5989 Sullivan Drives",
+    "address_extra": "Apt. 996",
+    "city": "Port Anitaburgh",
+    "zip_code": "91688",
+    "province": "Illinois",
+    "country": "Czech Republic",
+    "contact_name": "Toni Barnett",
+    "phonenumber": "363.541.7282x36825",
+    "reference": "LPaJ-SUP0001"
+}
+
+####
+
+PUT http://localhost:5072/cargohub/suppliers/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "code": "SUP0001",
+    "name": "Lee, Parks and Johnson",
+    "address": "5989 Sullivan Drives",
+    "address_extra": "Apt. 996",
+    "city": "Port Anitaburgh",
+    "zip_code": "91688",
+    "province": "Illinois",
+    "country": "United States",
+    "contact_name": "Toni Barnett",
+    "phonenumber": "363.541.7282x36825",
+    "reference": "LPaJ-SUP0001"
+}
+
+####
+
+DELETE http://localhost:5072/cargohub/suppliers/1
+
+############transfers
+
+GET http://localhost:5072/cargohub/transfers/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+####
+POST http://localhost:5072/cargohub/transfers
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+{
+    "id": 1,
+    "reference": "TR00001",
+    "transfer_from": 0,
+    "transfer_to": 9229,
+    "transfer_status": "Scheduled",
+    "items": [
+        {
+            "item_id": "P007435",
+                    "amount": 23
+        }
+    ]
+}
+
+####
+PUT http://localhost:5072/cargohub/transfers/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+Content-Type: application/json
+
+{
+    "id": 1,
+    "reference": "TR00001",
+    "transfer_from": null,
+    "transfer_to": "9229",
+    "transfer_status": "Completed",
+    "items": [
+        {
+            "item_id": "P007435",
+            "amount": 23
+        }
+    ]
+}
+
+####
+
+DELETE http://localhost:5072/cargohub/transfers/1
+API_KEY: 5b3b8e0f-4a19-4e06-b458-19b33bc0ae6b
+
+############warehouses
+
+GET http://localhost:5072/cargohub/warehouses/1
+
+####
+POST http://localhost:5072/cargohub/warehouses
+Content-Type: application/json
+
+{
+    "id": 1, "code":
+    "YQZZNL56", "name":
+    "Heemskerk cargo hub",
+    "address": "Karlijndreef 281",
+    "zip": "4002 AS",
+    "city": "Heemskerk",
+    "province": "Friesland",
+    "country": "NL",
+    "contact": {"name": "Fem Keijzer", "phone": "(078) 0013363", "email": "blamore@example.net"}
+}
+
+####
+PUT http://localhost:5072/cargohub/warehouses/1
+Content-Type: application/json
+
+{
+    "id": 1, "code":
+    "YQZZNL56", "name":
+    "Heemskerk cargo hub",
+    "address": "Karlijndreef 281",
+    "zip": "4002 AS",
+    "city": "Heemskerk",
+    "province": "Friesland",
+    "country": "NL",
+    "contact": {"name": "Fem Keijzer", "phone": "(078) 0013363", "email": "blamore@example.net"}
+}
+
+####
+DELETE http://localhost:5072/cargohub/warehouses/1

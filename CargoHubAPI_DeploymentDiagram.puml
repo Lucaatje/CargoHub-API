@@ -1,0 +1,25 @@
+@startuml
+cloud "GitHub" {
+    [Source Code Repository]
+}
+
+node "CI/CD Pipeline" {
+    [Build Stage]
+    [Test Stage]
+    [Deploy Stage]
+}
+
+node "Production Server" {
+    [CargoHub API]
+    database "Database" {
+        [CargoHub DB]
+    }
+}
+
+' Verbindingen
+[Source Code Repository] --> [CI/CD Pipeline] : Push code
+[Build Stage] --> [Test Stage] : Run tests
+[Test Stage] --> [Deploy Stage] : Approved
+[Deploy Stage] --> [Production Server] : Deploy code
+[CargoHub API] --> [CargoHub DB] : Queries
+@enduml

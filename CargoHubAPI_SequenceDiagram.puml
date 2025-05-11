@@ -1,0 +1,15 @@
+@startuml CargoHubAPI_SequenceDiagram
+actor User
+participant UI
+participant Controller
+participant Service
+participant Repository
+
+User -> UI : Sends Data
+UI -> Controller : Submits Data
+Controller -> Service : Request To Process Data
+Service -> Repository : Queries Database
+Repository -> Service : Returns Data
+Service -> Controller : Returns Data Result
+Controller -> UI : Returns Data Status
+@enduml

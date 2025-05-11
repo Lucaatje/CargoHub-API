@@ -1,0 +1,17 @@
+-----------------------------------------------------
+
+1. Install packages:
+
+> pip install pytest pytest-ordering pytest-cov coverage requests
+
+-----------------------------------------------------
+
+2. Create new VSCode project and with endpoints_tests.py
+
+-----------------------------------------------------
+
+3. Run tests:
+
+> pytest --cov=. --cov-report=html endpoints_tests.py
+
+-----------------------------------------------------
