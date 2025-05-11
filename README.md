@@ -11,5 +11,5 @@ Below is a basic sequence diagram that illustrates the flow of a typical request
 
 ![image](https://github.com/user-attachments/assets/0175b08c-6103-4004-aeaf-696aa869eb0f)
 
-You can find the full team project repository here:
+You can find the full team project original repository here:
 https://github.com/HamsterChief/Cargohub-Inf2
