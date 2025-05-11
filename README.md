@@ -10,3 +10,6 @@ clean code principles and team collaboration using Git and Github.
 Below is a basic sequence diagram that illustrates the flow of a typical request through the CargoHub API, from user input to database interaction and response.
 
 ![image](https://github.com/user-attachments/assets/0175b08c-6103-4004-aeaf-696aa869eb0f)
+
+You can find the full team project repository here:
+https://github.com/HamsterChief/Cargohub-Inf2
